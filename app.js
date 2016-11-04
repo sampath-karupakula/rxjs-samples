@@ -70,7 +70,7 @@ bar = Rx.Observable.timer(3000, 1000);
 
 
 */
-
+//multiple operators
 bar = Rx.Observable.interval(400).take(9)
     .map(i => parseInt(["1", "1", "foo", "1", "bar", "2", "6", "8", "7", "19", "21"][i]))
     .filter(i => !isNaN(i));
